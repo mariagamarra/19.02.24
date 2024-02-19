@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {exibirHorario} from './componentes/Horario';
 
 function App() {
   return (
@@ -14,13 +15,16 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-          id="textoReact"
+          id="lnk"
         >
           Learning React
         </a>
+        <button
+        onClick={exibirHorario}
+        >ver Horario</button>
       </header>
     </div>
   );
 }
-
+exibirHorario();
 export default App;
